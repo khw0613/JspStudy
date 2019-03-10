@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+hi
+	<form action="obj.jsp" method="post">
+		<input type="text" name="uid" value="hello">
+		<input type="submit" value="전송">
+	</form>
 </body>
 </html>
