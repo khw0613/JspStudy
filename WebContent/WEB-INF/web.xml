@@ -9,36 +9,16 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  <!-- JSP 초기화 파라미 -->
   <context-param>
-  	<param-name>jspApp</param-name>
-  	<param-value>Hello JSP</param-value>
+    <param-name>jspApp</param-name>
+    <param-value>Hello JSP</param-value>
   </context-param>
-  <!-- 특정 JSP 파일에서만 초기화 파라미터 -->
   <servlet>
-  	<servlet-name>initParam</servlet-name>
-  	<jsp-file>/initParam.jsp</jsp-file>
-  	<init-param>
-  		<param-name>onlyApp</param-name>
-  		<param-value>my jsp!!</param-value>
-  	</init-param>
+    <servlet-name>initParam</servlet-name>
+    <jsp-file>/initParam.jsp</jsp-file>
+    <init-param>
+      <param-name>onlyApp</param-name>
+      <param-value>my jsp!!</param-value>
+    </init-param>
   </servlet>
-  <!-- 웹페이지 전체에서 사용하는 파라미터 -->
-  <!--  
-  <context-param>
-  	<param-name>gAge</param-name>
-  	<param-value>1001</param-value>
-  </context-param>
-  -->
-  <!-- 개별 서블릿에서 초기화 파라미터 넣기 -->
-  <!--
-  <servlet>
-  	<servlet-name></servlet-name>
-  	<servlet-class></servlet-class>
-  	<init-param>
-  		<param-name></param-name>
-  		<param-value></param-value>
-  	</init-param>
-  </servlet>
-    -->
 </web-app>
