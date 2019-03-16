@@ -22,13 +22,11 @@
     </init-param>
   </servlet>
   <error-page>
-  	<exception-type>java.lang.NumberFormatException</exception-type>
-  	<location>/error02.jsp</location>
+    <exception-type>java.lang.NumberFormatException</exception-type>
+    <location>/error02.jsp</location>
   </error-page>
-  <!-- 요청 페이지가 존재하지 않는다. -->
   <error-page>
-  	<error-code>404</error-code>
-  	<location>/error03.jsp</location>
+    <error-code>404</error-code>
+    <location>/error03.jsp</location>
   </error-page>
-  
 </web-app>
